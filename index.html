@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ytmDesktop">
+        <img alt="cover" id="ytm_cover" />
+        <div id="song_title">
+            <span id="ytm_title"></span><span id="ytm_spacer">-</span><span id="ytm_author"></span>
+        </div>
+        <div id="song_time">
+            <span id="ytm_elapsed_seconds"></span>
+            <input title="progress" type="range" id="ytm_progressbar"></progress>
+            <span id="ytm_duration"></span>
+        </div>
+        <script src="YTMDesktopJSPlugin.js"></script>
+        <link href="YTMDesktopJSPlugin.css" rel="stylesheet">
+    </div>
+</body>
+
+</html>
