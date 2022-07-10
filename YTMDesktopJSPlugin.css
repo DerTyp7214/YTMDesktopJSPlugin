@@ -1,13 +1,17 @@
+:root {
+    --ytm-width: 60vh;
+}
+
 #ytmDesktop {
-    width: 250px;
-    height: 300px;
+    width: var(--ytm-width);
+    height: calc(var(--ytm-width) + 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 5px;
     background-color: #2d2d2d;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 13px;
 }
 
 #song_title {
@@ -17,13 +21,42 @@
     text-overflow: ellipsis;
 }
 
+#song_title #ytm_author,
+#song_title #ytm_title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 #song_title #ytm_spacer {
     margin-left: 8px;
     margin-right: 8px;
 }
 
-#ytm_cover {
-    width: 250px;
-    height: 250px;
+#song_time {
+    justify-content: space-around;
+    display: flex;
+    overflow: hidden;
+}
+
+#song_time #ytm_progressbar {
+    accent-color: white;
+    width: calc(100% - 150px);
+}
+
+#song_cover {
+    position: relative;
+    width: var(--ytm-width);
+    height: var(--ytm-width);
     border-radius: 8px;
+    overflow: hidden;
+}
+
+#song_cover #ytm_audio,
+#song_cover #ytm_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--ytm-width);
+    height: var(--ytm-width);
 }
